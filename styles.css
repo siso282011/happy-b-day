@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #E3E4E6, #F7F8FA); /* Fog gray gradient */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: #F7F8FA; /* Fog gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #800020; /* Bordo color */
+    font-size: 3em;
+    margin: 0;
+}
+
+.intro {
+    color: #4A4A4A; /* Dark fog gray for contrast */
+    font-size: 1.2em;
+    margin: 20px 0;
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+.birthday-image img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: zoomIn 2s ease-in-out 2s;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.message {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #4A4A4A; /* Dark fog gray */
+    animation: fadeIn 2s ease-in-out 3s;
+}
+
+.countdown {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #4A4A4A; /* Dark fog gray */
+    animation: fadeIn 2s ease-in-out 4s;
+}
+
+#timer {
+    font-size: 2em;
+    color: #800020; /* Bordo color */
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .intro, .message, .countdown {
+        font-size: 1em;
+    }
+
+    #timer {
+        font-size: 1.5em;
+    }
+}
