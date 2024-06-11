@@ -64,7 +64,7 @@ h1 {
 .countdown {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #4A4A4A; /* Dark fog gray */
+    color: #8B0000; /* Dark fog gray */
     animation: fadeIn 2s ease-in-out 4s;
 }
 
