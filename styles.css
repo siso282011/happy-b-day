@@ -54,7 +54,10 @@ h1 {
     font-size: 1.2em;
     color: #aa00f8; /* Dark fog gray */
     animation: fadeIn 2s ease-in-out 4s;
-    font-family: 'Pacifico', cursive; /* Adding font-family */
+}
+
+.countdown p {
+    font-family: 'Pacifico', cursive; /* Added font-family */
 }
 
 #timer {
