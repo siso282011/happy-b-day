@@ -1,5 +1,5 @@
 body {
-    background-color: #FFFFFF; /* White */
+    background-color: #E0E0E0; /* Fog Gray */
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -13,11 +13,11 @@ body {
 }
 
 h1 {
-    color: #800080; /* Purple */
+    color: #800000; /* Bordo */
 }
 
 .intro {
-    color: #800080; /* Purple */
+    color: #800080; /* Violet */
 }
 
 .countdown {
@@ -27,11 +27,10 @@ h1 {
 #timer {
     font-size: 24px;
     font-weight: bold;
-    color: #800080; /* Purple */
 }
 
 .message {
     margin-top: 20px;
     display: none;
-    color: #800080; /* Purple */
+    color: #000080; /* Navy Blue */
 }
