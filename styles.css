@@ -1,26 +1,34 @@
 body {
-    background-color: #FFFFFF; /* White */
-    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #E6E6FA, #FFFFFF); /* Light purple to white gradient */
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 40px;
+    max-width: 600px;
     text-align: center;
+    animation: fadeIn 1s ease-in-out;
 }
 
 h1 {
-    color: #800080; /* Purple */
-    font-size: 36px;
-    font-weight: bold;
+    color: #4B0082; /* Dark purple */
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .intro {
-    color: #800080; /* Purple */
-    font-size: 18px;
+    color: #4B0082; /* Dark purple */
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }
 
 .countdown {
@@ -28,14 +36,21 @@ h1 {
 }
 
 #timer {
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: bold;
-    color: #800080; /* Purple */
+    color: #4B0082; /* Dark purple */
 }
 
 .message {
     margin-top: 20px;
     display: none;
-    color: #800080; /* Purple */
+    color: #4B0082; /* Dark purple */
     text-align: left;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
