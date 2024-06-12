@@ -1,15 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
 body {
-    font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #ffffff, #800020); /* White to purple gradient */
+    margin: 0;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
-    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    color: #800020; /* Match big text color */
 }
 
 .container {
