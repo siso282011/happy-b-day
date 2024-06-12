@@ -35,8 +35,11 @@ h1 {
     margin: 0;
 }
 
+.intro, .countdown p {
+    color: #800020; /* Match big text color */
+}
+
 .intro {
-    color: #4A4A4A; /* Dark fog gray for contrast */
     font-size: 1.2em;
     margin: 20px 0;
     animation: fadeIn 2s ease-in-out 1s;
@@ -52,12 +55,7 @@ h1 {
 .countdown {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #aa00f8; /* Dark fog gray */
     animation: fadeIn 2s ease-in-out 4s;
-}
-
-.countdown p {
-    font-family: 'Pacifico', cursive; /* Added font-family */
 }
 
 #timer {
