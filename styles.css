@@ -13,11 +13,11 @@ body {
 }
 
 h1 {
-    color: #4B0082; /* Indigo */
+    color: #333; /* Dark gray */
 }
 
 .intro {
-    color: #4B0082; /* Indigo */
+    color: #666; /* Medium gray */
 }
 
 .countdown {
@@ -27,11 +27,9 @@ h1 {
 #timer {
     font-size: 24px;
     font-weight: bold;
-    color: #4B0082; /* Indigo */
 }
 
 .message {
     margin-top: 20px;
     display: none;
-    color: #4B0082; /* Indigo */
 }
