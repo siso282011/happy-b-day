@@ -1,25 +1,29 @@
-function countdown(date) {
-    const countDownDate = new Date(date).getTime();
+// Set the date we're counting down to
+var countDownDate = new Date("June 14, 2024 00:00:00").getTime();
 
-    const x = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countDownDate - now;
+// Update the count down every 1 second
+var x = setInterval(function() {
 
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    // Get today's date and time
+    var now = new Date().getTime();
 
-        document.getElementById("timer").innerHTML = days + "d " + hours + "h "
-        + minutes + "m " + seconds + "s ";
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("timer").innerHTML = "Happy Birthday!";
-            document.getElementById("birthdayMessage").style.display = "block";
-        }
-    }, 1000);
-}
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-// Set your birthday date here
-countdown('Jun 14, 2024 00:00:00');
+    // Display the result in the element with id="timer"
+    document.getElementById("timer").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "EXPIRED";
+        document.getElementById("birthdayMessage").style.display = "block";
+    }
+}, 1000);
