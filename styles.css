@@ -57,14 +57,14 @@ h1 {
 .message {
     margin-top: 20px;
     font-size: 1em;
-    color: #4A4A4A; /* Dark fog gray */
+    color: #ffffff; /* Dark fog gray */
     animation: fadeIn 2s ease-in-out 3s;
 }
 
 .countdown {
     margin-top: 20px;
     font-size: 1.2em;
-    color: #4A4A4A; /* Dark fog gray */
+    color: #aa00f8; /* Dark fog gray */
     animation: fadeIn 2s ease-in-out 4s;
 }
 
