@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
+    font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #ffffff, #8a2be2); /* White to violet gradient */
-    margin: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
-    color: #8a2be2; /* Match big text color */
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
 }
 
 .container {
@@ -45,19 +48,20 @@ h1 {
 .message {
     margin-top: 20px;
     font-size: 1em;
-    color: #ffffff; /* Dark fog gray */
+    color: #8a2be2; /* Violet color */
     animation: fadeIn 2s ease-in-out 3s;
 }
 
 .countdown {
     margin-top: 20px;
     font-size: 1.2em;
+    color: #aa00f8; /* Dark fog gray */
     animation: fadeIn 2s ease-in-out 4s;
 }
 
 #timer {
     font-size: 2em;
-    color: #8a2be2; /* Violet color */
+    color: #800020; /* Bordo color */
 }
 
 @media (max-width: 600px) {
