@@ -1,12 +1,12 @@
 body {
-    background: linear-gradient(135deg, #ffffff, #800020); /* White to purple gradient */
+    background: linear-gradient(135deg, #ffffff, #8a2be2); /* White to violet gradient */
     margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Roboto', sans-serif;
-    color: #800020; /* Match big text color */
+    color: #8a2be2; /* Match big text color */
 }
 
 .container {
@@ -27,13 +27,13 @@ body {
 
 h1 {
     font-family: 'Pacifico', cursive;
-    color: #800020; /* Bordo color */
+    color: #8a2be2; /* Violet color */
     font-size: 3em;
     margin: 0;
 }
 
 .intro, .countdown p {
-    color: #800020; /* Match big text color */
+    color: #8a2be2; /* Violet color */
 }
 
 .intro {
@@ -57,7 +57,7 @@ h1 {
 
 #timer {
     font-size: 2em;
-    color: #800020; /* Bordo color */
+    color: #8a2be2; /* Violet color */
 }
 
 @media (max-width: 600px) {
