@@ -23,7 +23,7 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("timer").innerHTML = "HAPPY BIRTHDAY";
+        document.getElementById("timer").innerHTML = "HAPPY BIRTHDAY I LOVE YOU❤️ ";
         document.getElementById("birthdayMessage").style.display = "block";
     }
 }, 1000);
