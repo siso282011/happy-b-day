@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(135deg, #E3E4E6, #F7F8FA); /* Fog gray gradient */
+    background: linear-gradient(135deg, #ffffff, #800020); /* White to purple gradient */
     display: flex;
     justify-content: center;
     align-items: center;
