@@ -24,24 +24,37 @@ var x = setInterval(function() {
     if (distance < 0) {
         clearInterval(x);
         document.getElementById("timer").innerHTML = "HAPPY BIRTHDAY";
-        showPage(1);
+        setTimeout(function() {
+            showPage(1);
+        }, 1000); // Delay to show the first page
     }
 }, 1000);
 
 function showPage(pageNumber) {
+    document.getElementById("pagination").style.display = "block";
     if (pageNumber === 1) {
         document.getElementById("page1").style.display = "block";
         document.getElementById("page2").style.display = "none";
-        document.getElementById("pagination").style.display = "block";
+        document.getElementById("prevBtn").style.display = "none";
+        document.getElementById("nextBtn").style.display = "inline-block";
+        document.getElementById("pageCounter").textContent = "1/2";
         setTimeout(function() {
             showPage(2);
         }, 10000); // Show page 2 after 10 seconds
     } else if (pageNumber === 2) {
         document.getElementById("page1").style.display = "none";
         document.getElementById("page2").style.display = "block";
+        document.getElementById("prevBtn").style.display = "inline-block";
+        document.getElementById("nextBtn").style.display = "none";
+        document.getElementById("pageCounter").textContent = "2/2";
         setTimeout(function() {
             document.getElementById("page2").style.display = "none";
             document.getElementById("pagination").style.display = "none";
         }, 10000); // Hide everything after 10 seconds
     }
 }
+
+// Hide pages initially
+document.getElementById("page1").style.display = "none";
+document.getElementById("page2").style.display = "none";
+document.getElementById("pagination").style.display = "none";
