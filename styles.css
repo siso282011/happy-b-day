@@ -49,35 +49,10 @@ h1 {
     margin-top: 20px;
     font-size: 1em;
     color: #8a2be2; /* Violet color */
+    font-family: 'Roboto', sans-serif; /* Added font-family */
     animation: fadeIn 2s ease-in-out 3s;
 }
 
 .countdown {
     margin-top: 20px;
-    font-size: 1.2em;
-    color: #aa00f8; /* Dark fog gray */
-    animation: fadeIn 2s ease-in-out 4s;
-}
-
-#timer {
-    font-size: 2em;
-    color: #800020; /* Bordo color */
-}
-
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    .intro, .message, .countdown {
-        font-size: 1em;
-    }
-
-    #timer {
-        font-size: 1.5em;
-    }
-}
+    font-size: 1.2em
