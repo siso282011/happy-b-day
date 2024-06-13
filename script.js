@@ -23,7 +23,25 @@ var x = setInterval(function() {
     // If the count down is over, write some text 
     if (distance < 0) {
         clearInterval(x);
-        document.getElementById("timer").innerHTML = "HAPPY BIRTHDAY I LOVE YOU❤️ ";
-        document.getElementById("birthdayMessage").style.display = "block";
+        document.getElementById("timer").innerHTML = "HAPPY BIRTHDAY";
+        document.getElementById("page1").style.display = "block";
+        document.getElementById("pagination").style.display = "block";
     }
 }, 1000);
+
+function showPage(pageNumber) {
+    if (pageNumber === 1) {
+        document.getElementById("page1").style.display = "block";
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("prevBtn").style.display = "none";
+        document.getElementById("nextBtn").style.display = "inline";
+    } else if (pageNumber === 2) {
+        document.getElementById("page1").style.display = "none";
+        document.getElementById("page2").style.display = "block";
+        document.getElementById("prevBtn").style.display = "inline";
+        document.getElementById("nextBtn").style.display = "none";
+    }
+}
+
+// Initialize the first page view
+showPage(1);
